@@ -3,7 +3,7 @@
   --black: #000;
   --white: #fff;
   --gray: #aaa;
-  --light-gray: #eee;
+  --light-gray: #e6e6e6;
 }
 
 * {
@@ -73,6 +73,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
   }
   #header-img {
     margin-left: 1.5rem;
@@ -104,7 +105,7 @@ a {
   font-weight: 400;
   padding: 1rem;
   margin: 0.5rem;
-  border: 1px solid var(--gray);
+  border: 2px solid var(--gray);
   border-radius: 5px;
   outline-color: var(--lime);
   display: block;
@@ -156,6 +157,15 @@ a {
   margin-top: 1.5rem;
 }
 
+.icon-transform {
+  transition: transform 2s;
+}
+
+.icon-transform:hover,
+.icon-transform:focus {
+  transform: rotate(360deg);
+}
+
 .feature-text {
   text-align: center;
   margin-bottom: 2.5rem;
@@ -205,16 +215,22 @@ a {
   background-color: var(--light-gray);
   width: 33rem;
   margin: 2.5rem;
-  border: 1px solid var(--black);
+  border: 2px solid var(--black);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s;
+}
+
+.card:hover,
+.card:focus {
+  transform: scale(1.1, 1.1);
 }
 
 .card-header {
-  background-color: var(--gray);
+  background-color: var(--lime);
   width: 100%;
   padding: 2.2rem;
   text-align: center;
@@ -236,7 +252,7 @@ a {
     margin: 5rem;
   }
   .card {
-    margin: 5rem;
+    margin: 2.5rem;
   }
 }
 

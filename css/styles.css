@@ -75,7 +75,7 @@ ul {
 /* Hero */
 
 .hero {
-  margin: 8rem;
+  margin: 7rem 2.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -128,4 +128,55 @@ ul {
   background-color: var(--lime);
   color: var(--black);
   outline: none;
+}
+
+/* Features */
+
+.features-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem;
+}
+
+.feature-icon {
+  font-size: 6rem;
+  color: var(--lime);
+  justify-self: center;
+  margin-top: 1.5rem;
+}
+
+.feature-text {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.feature-text h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.feature-text p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 600px) {
+  .features-container {
+    grid-template-columns: 1fr 4fr;
+    margin: 5rem 12.5rem;
+  }
+  .feature-icon {
+    margin-right: 2.5rem;
+  }
+  .feature-text {
+    text-align: initial;
+  }
+}
+
+/* Video */
+
+#howitworks {
+  margin: 7rem 2.5rem;
+  display: flex;
+  justify-content: center;
 }

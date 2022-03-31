@@ -3,6 +3,11 @@
   --black: #000;
   --white: #fff;
   --gray: #aaa;
+  --light-gray: #eee;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
@@ -67,7 +72,7 @@ ul {
   #header-img {
     margin-left: 1.5rem;
   }
-  ul {
+  #header ul {
     display: flex;
   }
 }
@@ -75,7 +80,7 @@ ul {
 /* Hero */
 
 .hero {
-  margin: 7rem 2.5rem;
+  margin: 7.5rem 2.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -115,7 +120,7 @@ ul {
   color: var(--lime);
   font-size: 1.6rem;
   font-weight: 700;
-  padding: 1rem;
+  padding: 1.5rem;
   margin: 2.2rem;
   border: none;
   border-radius: 5px;
@@ -135,7 +140,8 @@ ul {
 .features-container {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 2rem;
+  margin: 7.5rem 2.5rem;
+  padding-top: 5rem;
 }
 
 .feature-icon {
@@ -147,7 +153,7 @@ ul {
 
 .feature-text {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
 }
 
 .feature-text h2 {
@@ -163,20 +169,73 @@ ul {
 @media screen and (min-width: 600px) {
   .features-container {
     grid-template-columns: 1fr 4fr;
-    margin: 5rem 12.5rem;
+    margin: 7.5rem 12.5rem;
   }
   .feature-icon {
     margin-right: 2.5rem;
   }
   .feature-text {
     text-align: initial;
+    margin-bottom: 5rem;
   }
 }
 
 /* Video */
 
 #howitworks {
-  margin: 7rem 2.5rem;
+  margin: 7.5rem 2.5rem;
   display: flex;
   justify-content: center;
+}
+
+#video {
+  margin: 5rem;
+}
+
+/* Cards */
+
+.cards-container {
+  margin: 7.5rem 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--light-gray);
+  width: 33rem;
+  margin: 2.5rem;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header {
+  background-color: var(--gray);
+  width: 100%;
+  padding: 2.2rem;
+  text-align: center;
+}
+
+.card-header,
+.card h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.card ul {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 600px) {
+  .cards-container {
+    margin: 7.5rem;
+  }
+  .card {
+    margin: 5rem;
+  }
 }

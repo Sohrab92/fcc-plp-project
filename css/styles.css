@@ -199,7 +199,10 @@ a {
 }
 
 #video {
+  width: 56rem;
+  height: 31.5rem;
   margin: 5rem 0;
+  border: 2px solid var(--gray);
 }
 
 /* Cards */

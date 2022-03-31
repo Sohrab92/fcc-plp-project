@@ -1,9 +1,9 @@
 :root {
   --lime: #cf5;
+  --lightlime: #f4ffdd;
   --black: #000;
   --white: #fff;
   --gray: #aaa;
-  --light-gray: #e6e6e6;
 }
 
 * {
@@ -100,7 +100,7 @@ a {
 }
 
 #email {
-  width: 30rem;
+  width: 33rem;
   font-size: 1.6rem;
   font-weight: 400;
   padding: 1rem;
@@ -158,12 +158,12 @@ a {
 }
 
 .icon-transform {
-  transition: transform 2s;
+  transition: transform 1s;
 }
 
 .icon-transform:hover,
 .icon-transform:focus {
-  transform: rotate(360deg);
+  transform: rotate(360deg) scale(1.2, 1.2);
 }
 
 .feature-text {
@@ -212,7 +212,7 @@ a {
 }
 
 .card {
-  background-color: var(--light-gray);
+  background-color: var(--lightlime);
   width: 33rem;
   margin: 2.5rem;
   border: 2px solid var(--black);
@@ -245,6 +245,10 @@ a {
 .card ul {
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+.card li {
+  margin: 1rem;
 }
 
 @media screen and (min-width: 600px) {

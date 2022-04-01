@@ -86,7 +86,8 @@ a {
 /* Hero */
 
 .hero {
-  margin: 10rem 2.5rem 5rem 2.5rem;
+  margin: 5rem 2.5rem;
+  padding-top: 5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -144,17 +145,20 @@ a {
 /* Features */
 
 .features-container {
-  margin: 5rem 2.5rem;
+  max-width: 90vw;
+  margin: 5rem auto;
   padding-top: 5rem;
   display: grid;
   grid-template-columns: 1fr;
+  justify-content: center;
+  row-gap: 2.5rem;
 }
 
 .feature-icon {
   font-size: 6rem;
   color: var(--lime);
   justify-self: center;
-  margin-top: 1.5rem;
+  align-self: center;
 }
 
 .icon-transform {
@@ -163,12 +167,12 @@ a {
 
 .icon-transform:hover,
 .icon-transform:focus {
-  transform: rotate(360deg) scale(1.2, 1.2);
+  transform: rotate(360deg) scale(1.3, 1.3);
 }
 
 .feature-text {
+  align-self: center;
   text-align: center;
-  margin-bottom: 2.5rem;
 }
 
 .feature-text h2 {
@@ -178,22 +182,21 @@ a {
 
 @media screen and (min-width: 600px) {
   .features-container {
+    max-width: 80vw;
     grid-template-columns: 1fr 4fr;
-    margin: 5rem 12.5rem;
+    row-gap: 5rem;
   }
-  .feature-icon {
-    margin-right: 2.5rem;
-  }
+
   .feature-text {
     text-align: initial;
-    margin-bottom: 5rem;
   }
 }
 
 /* Video */
 
 #howitworks {
-  margin: 5rem 2.5rem;
+  margin: 5rem;
+  padding-top: 5rem;
   display: flex;
   justify-content: center;
 }
@@ -201,14 +204,16 @@ a {
 #video {
   width: 56rem;
   height: 31.5rem;
-  margin: 5rem 0;
   border: 2px solid var(--gray);
 }
 
 /* Cards */
 
 .cards-container {
-  margin: 5rem 2.5rem;
+  max-width: 90vw;
+  margin: 5rem auto;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -256,10 +261,7 @@ a {
 
 @media screen and (min-width: 600px) {
   .cards-container {
-    margin: 5rem;
-  }
-  .card {
-    margin: 2.5rem;
+    max-width: 80vw;
   }
 }
 
